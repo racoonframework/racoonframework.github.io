@@ -69,11 +69,11 @@ async fn main() {
     let paths = vec![Path::new("/", view!(home))];
 
     let custom_session_manager = RedisSessionManager {};
-    let _ = Server::bind("127.0.0.1:8080")
+    let result = Server::bind("127.0.0.1:8080")
             .urls(paths)
             .set_session_manager(custom_session_manager) // Set your custom session manager here
             .run()
-            .await
-        .unwrap();
+            .await;
+    println("{:?}", result);
 }
 ```
