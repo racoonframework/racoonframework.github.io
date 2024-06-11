@@ -10,8 +10,10 @@ nav:
   - Middleware: middleware.md
   - Cookies: cookies.md
   - Session: session.md
-  - Handling forms: forms.md
-  - WebSocket: websocket.md
+  - Form Handling: 
+    - Reading form data: reading-form-data.md
+    - Form validation: form-validation.md
+  - WebSocket: websocket-basics.md
 
 theme:
   name: material
