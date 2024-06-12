@@ -4,7 +4,7 @@ Racoon provides interface to access cookies from the `Request` instance. To set 
 
 The `set_cookie` method sets `HttpOnly` cookie with the `path=/`.
 
-## Example
+## Basic Usage
 ```rust
 use racoon::core::request::Request;
 use racoon::core::response::status::ResponseStatus;

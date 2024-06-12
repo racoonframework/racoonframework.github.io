@@ -4,7 +4,7 @@ Using websocket with Racoon is easy. You need to create `WebSocket` instance, lo
 instance response.
 To clone websocket instance for group chats, use `websocket.clone()`.
 
-## Example
+## Basic Usage
 
 ```rust
 use racoon::core::path::Path;

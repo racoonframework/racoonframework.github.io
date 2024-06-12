@@ -5,7 +5,7 @@ If you require to read the body of another content type you can use `request.str
 request body manually.
 
 
-## Example
+## Basic Usage
 
 The `FormData` and `File` are the HashMap instances.
 

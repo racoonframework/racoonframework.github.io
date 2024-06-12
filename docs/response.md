@@ -3,9 +3,8 @@
 Racoon supports `text/html` and `application/json` with `HttpResponse` and
 `JsonResponse` structs.
 
-## Example
 
-### HttpResponse
+## HTTP Response
 
 ```rust
 use racoon::core::request::Request;
@@ -16,7 +15,7 @@ async fn hello_world(request: Request) -> Response {
 }
 ```
 
-### JsonResponse
+## JSON Response
 
 To use Json Response, you need to add `serde_json` crate.
 
@@ -32,7 +31,7 @@ async fn hello_world(request: Request) -> Response {
 }
 ```
 
-## Advanced
+## Custom Response
 
 You can write your own custom Response type by implementing `AbstractResponse` trait.
 

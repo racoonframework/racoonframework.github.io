@@ -4,7 +4,8 @@ Racoon provides interface to access session values fron the `Request` instance. 
 
 `FileSessionManager` uses Sqlite database and it is lazily created at `.cache/session` when for the first time `session.set()` is invoked.
 
-## Example
+## Basic Usage
+
 ```rust
 use racoon::core::path::Path;
 use racoon::core::request::Request;

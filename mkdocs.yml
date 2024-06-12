@@ -1,19 +1,26 @@
 site_name: Racoon
-site_description: Racoon is fast, fully customizable lightweight web framework for rust developers.
+site_description: Racoon is a fast, fully customizable web framework for Rust focusing on simplicity.
 repo_url: https://github.com/tejmagar/racoon
-edit_uri: ./edit/main/docs
+
 nav:
-  - Getting Started: index.md
-  - Routing: routing.md
-  - Response: response.md
-  - Shared Context: shared-context.md
-  - Middleware: middleware.md
-  - Cookies: cookies.md
-  - Session: session.md
-  - Form Handling: 
+  - 'Introduction': index.md
+    
+  - 'Basics':
+    - Getting Started: getting-started.md
+    - Routing: routing.md
+    - Response: response.md
+    - Shared Context: shared-context.md
+    - Cookies: cookies.md
+    - Session: session.md
+    - WebSocket: websocket-basics.md
+  
+  - 'Form Handling': 
     - Reading form data: reading-form-data.md
     - Form validation: form-validation.md
-  - WebSocket: websocket-basics.md
+
+  - 'Middlewares': middleware.md
+
+     
 
 theme:
   name: material
@@ -35,3 +42,4 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+
