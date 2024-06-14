@@ -88,7 +88,7 @@ async fn upload_profile(request: Request) -> Response {
 
 ## Custom validation
 
-Add your custom validation logic inside the `post_validate()` method. It will only be called after when field is validated.
+Add your custom validation logic inside the `post_validate()` method. It will only be called after field is validated with default constraints.
 Some fields may not have `post_validate()` method.
 
 ```rust
