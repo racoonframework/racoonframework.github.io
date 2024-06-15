@@ -1,6 +1,6 @@
 # Form Validation
 
-Racoon provides flexible way to validate your forms. You need to import import fields from `racoon::forms::fields` module.
+Racoon provides flexible way to validate your forms. You need to import fields from `racoon::forms::fields` module.
 
 The available fields are:
 
