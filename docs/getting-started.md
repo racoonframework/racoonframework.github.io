@@ -39,5 +39,5 @@ async fn main() {
 }
 ```
 
-For binding to Unix Domain Sockets, use `Server::bind_uds("/path/tmp.sock")` method.
+For more binding options such as Unix Domain Sockets or with TLS, checkout [server binding options guide](server-binding-options.md).
 

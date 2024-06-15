@@ -46,3 +46,5 @@ async fn main() {
         .run().await;
 }
 ```
+
+Checkout [form constraints](server-configurations.md#form-constraints) guide to know about default constraints applied by Racoon.

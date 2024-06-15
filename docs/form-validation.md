@@ -118,3 +118,5 @@ let name: InputField<String> = InputField::new("name").handle_error_message(|err
   default_errors
 });
 ```
+
+Checkout [form constraints](server-configurations.md#form-constraints) guide to know about default constraints applied by Racoon.

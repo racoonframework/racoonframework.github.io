@@ -21,7 +21,8 @@ nav:
   - 'Middlewares': middleware.md
   - 'Advanced':
     - Server binding options: server-binding-options.md
-     
+    - Server configurations: server-configurations.md
+    - Stopping server: stopping-server.md
 
 theme:
   name: material
