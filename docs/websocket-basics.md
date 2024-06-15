@@ -11,12 +11,12 @@ use racoon::core::path::Path;
 use racoon::core::request::Request;
 use racoon::core::response::Response;
 use racoon::core::server::Server;
-use racoon::core::websocket::{Message, Websocket};
+use racoon::core::websocket::{Message, WebSocket};
 
 use racoon::view;
 
 async fn ws(request: Request) -> Response {
-    let (mut websocket, connected) = Websocket::from(&request).await;
+    let (mut websocket, connected) = WebSocket::from(&request).await;
     if !connected {
         // WebSocket connection didn't success
         return websocket.response();
