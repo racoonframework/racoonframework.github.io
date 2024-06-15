@@ -1,6 +1,6 @@
 # Server binding options
 
-Racoon provides multiple ways to bind server with much controll.
+Racoon provides multiple ways to bind server which allows you to have low level controls.
 
 ## Binding to host port number
 
