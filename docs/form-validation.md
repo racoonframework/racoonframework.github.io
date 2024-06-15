@@ -102,6 +102,8 @@ let name: InputField<String> = InputField::new("name").post_validate(|value| {
 
 ## Custom errors
 
+You can customize the error messages with`handle_error_message()` method.
+
 ```rust
 let name: InputField<String> = InputField::new("name").handle_error_message(|error, default_errors| {
   match error {

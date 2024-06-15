@@ -2,7 +2,7 @@
 
 The middleware can run before processing the response and after the response.
 
-## Example
+## Basic Usage
 
 You need to use `wrap_view!` macro to wrap async middleware view.
 

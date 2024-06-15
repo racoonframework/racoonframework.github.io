@@ -19,7 +19,8 @@ nav:
     - Form validation: form-validation.md
 
   - 'Middlewares': middleware.md
-
+  - 'Advanced':
+    - Server binding options: server-binding-options.md
      
 
 theme:
