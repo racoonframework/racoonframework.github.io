@@ -7,7 +7,7 @@ You will need `tokio` runtime to run Racoon. Run `cargo add tokio` to install to
 ```
 [dependencies]
 racoon = { git = "https://github.com/racoonframework/racoon", version = "0.1.1" }
-tokio = "1.8.4"
+tokio = "1.18.5"
 ```
 
 ## Hello World
