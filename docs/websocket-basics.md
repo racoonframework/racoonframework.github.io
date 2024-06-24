@@ -16,10 +16,10 @@ use racoon::core::websocket::{Message, WebSocket};
 use racoon::view;
 
 async fn ws(request: Request) -> Response {
-    let (mut websocket, connected) = WebSocket::from(&request).await;
+    let (websocket, connected) = WebSocket::from(&request).await;
     if !connected {
         // WebSocket connection didn't success
-        return websocket.response();
+        return websocket.bad_request().await;
     }
 
     println!("WebSocket client connected.");
@@ -36,10 +36,10 @@ async fn ws(request: Request) -> Response {
             _ => {}
         }
     }
-    websocket.response()
+    websocket.exit()
 }
 
-#[tokio::main]
+#[tokio::main]``
 async fn main() {
     let paths = vec![
         Path::new("/ws/", view!(ws))
