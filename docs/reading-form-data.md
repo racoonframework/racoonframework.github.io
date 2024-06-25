@@ -21,10 +21,10 @@ use racoon::core::shortcuts::SingleText;
 use racoon::{view, wrap_view};
 
 
-async fn form(mut request: Request) -> Response {
+async fn form(request: Request) -> Response {
     if request.method == "POST" {
         // Parses request body
-        let (mut form_data, mut files) = request.parse().await;
+        let (form_data, files) = request.parse().await;
         println!("Name: {:?}", form_data.value("name"));
 
         let file = files.value("file");
