@@ -26,7 +26,7 @@ nav:
 
 theme:
   name: material
-  favicon: img/favicon.ico
+  logo: images/logo.png
   features:
     - navigation.expand
     - toc.integrate
@@ -35,6 +35,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - navigation.footer
 
 markdown_extensions:
   - pymdownx.highlight:
