@@ -44,7 +44,7 @@ let request_constraints = RequestConstraints {
 
 let server = Server::bind("127.0.0.1:8080")
     .request_constraints(request_constraints)
-    .urls(vec![])
+    .urls(...)
     .run()
     .await;
 ```
