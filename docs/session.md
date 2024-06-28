@@ -1,6 +1,6 @@
 # Session
 
-Racoon provides interface to access session values fron the `Request` instance. By default, racoon uses `FileSessionManager` for managing and storing the session data.
+Racoon provides interface to access session values from the `Request` instance. By default, racoon uses `FileSessionManager` for managing and storing the session data.
 
 `FileSessionManager` uses Sqlite database and it is lazily created at `.cache/session` when for the first time `session.set()` is invoked.
 
