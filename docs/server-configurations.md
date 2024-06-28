@@ -49,3 +49,17 @@ let server = Server::bind("127.0.0.1:8080")
     .await;
 ```
 
+
+## TCP Nodelay
+
+To set nodelay for socket client streams, use `server.nodelay()` method. This configuration will do nothing 
+if you are using Unix Domain Socket.
+
+```rust
+let server = Server::bind("127.0.0.1:8080")
+        .request_constraints(request_constraints)
+        .nodelay() // Set nodelay
+        .urls(...)
+        .run()
+        .await;
+```
