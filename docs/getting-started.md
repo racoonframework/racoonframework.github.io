@@ -12,6 +12,12 @@ tokio = "1.18.5"
 
 ## Hello World
 
+Racoon is fairly simple, you just define the function which takes `Request` and returns the `Response`.
+Once you define your function, define your routes, bind the server and you are ready to go.
+
+This is a simple example code which returns response "Hello World".
+Click on [http://127.0.0.1:8080](http://127.0.0.1:8080) to see the page.
+
 ```rust
 use racoon::core::path::Path;
 use racoon::core::request::Request;
@@ -41,3 +47,9 @@ async fn main() {
 
 For more binding options such as Unix Domain Sockets or with TLS, checkout [server binding options guide](server-binding-options.md).
 
+
+Now just run your project.
+
+```bash
+cargo run --release
+```
