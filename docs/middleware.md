@@ -2,6 +2,9 @@
 
 The middleware can run before processing the response and after the response.
 
+You can perform task like logging, serving static files or security checks inside the `wrap` middleware 
+function.
+
 ## Basic Usage
 
 You need to use `wrap_view!` macro to wrap async middleware view.
