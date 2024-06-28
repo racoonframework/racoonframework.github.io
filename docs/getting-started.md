@@ -46,10 +46,3 @@ async fn main() {
 ```
 
 For more binding options such as Unix Domain Sockets or with TLS, checkout [server binding options guide](server-binding-options.md).
-
-
-Now just run your project.
-
-```bash
-cargo run --release
-```
