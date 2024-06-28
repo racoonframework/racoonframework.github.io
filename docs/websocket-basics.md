@@ -1,8 +1,9 @@
 # WebSocket
 
 Using websocket with Racoon is easy. You need to create `WebSocket` instance, loop incoming message and return the
-instance response.
-To clone websocket instance for group chats, use `websocket.clone()`.
+exit response.
+
+To clone websocket instance for group chats, use `websocket.clone()`. This clone is thread safe and uses the same underlying connection.
 
 ## Basic Usage
 
