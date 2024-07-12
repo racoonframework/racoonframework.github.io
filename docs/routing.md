@@ -20,8 +20,8 @@ use racoon::core::shortcuts::SingleText;
 use racoon::view;
 
 async fn hello_world(request: Request) -> Response {
-    println!("{}", request.query_params.value("name"));
-    println!("{}", request.path_params.value("id"));
+    println!("{:?}", request.query_params.value("name"));
+    println!("{:?}", request.path_params.value("id"));
     HttpResponse::ok().body("Hello World")
 }
 
